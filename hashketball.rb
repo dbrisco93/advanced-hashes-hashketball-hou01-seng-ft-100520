@@ -214,6 +214,7 @@ end
 def big_shoe_rebounds
   game_hash.each do |team_location, values|
     players = values[:players]
-    binding.pry
+    max = players.values.max
+Hash[players.select { |k, v| v == max}]
   end
 end
