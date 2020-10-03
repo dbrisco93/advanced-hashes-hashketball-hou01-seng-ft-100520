@@ -215,8 +215,7 @@ def big_shoe_rebounds
   game_hash.each do |team_location, values|
     players = values[:players]
     big_foot = players.max_by{|k| k[:shoe]}[:player_name]
-    return big_foot
-  binding.pry
+    binding.pry
     end
     binding.pry
 end
