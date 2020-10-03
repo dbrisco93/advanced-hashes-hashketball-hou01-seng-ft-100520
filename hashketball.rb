@@ -214,9 +214,6 @@ end
 def big_shoe_rebounds
   game_hash.each do |team_location, values|
     players = values[:players]
-    new_array = players.map {|key| key.values}
-    new_array.each do |stat|
-      binding.pry
-  end
+    binding.pry
   end
 end
