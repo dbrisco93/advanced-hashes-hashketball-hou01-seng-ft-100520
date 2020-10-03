@@ -214,6 +214,6 @@ end
 def big_shoe_rebounds
   game_hash.each do |team_location, values|
     players = values[:players]
-    players.max_by
+    players.max_by{|k| k[:shoe]}[:rebounds]
   end
 end
