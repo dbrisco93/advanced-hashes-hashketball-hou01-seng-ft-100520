@@ -217,7 +217,6 @@ def big_shoe_rebounds
     big_foot = players.max_by{|k| k[:shoe]}[:player_name]
     players.each do |key, value|
       if key[:player_name] == big_foot
-        binding.pry
         return key[:rebounds]
       end
     end
