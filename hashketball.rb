@@ -214,6 +214,6 @@ end
 def big_shoe_rebounds
   game_hash.each do |team_location, values|
     players = values[:players]
-    new_hash = players.map 
+    new_hash = players.map {|key| key.values
   end
 end
