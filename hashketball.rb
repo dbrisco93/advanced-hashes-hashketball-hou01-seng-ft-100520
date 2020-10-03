@@ -218,8 +218,8 @@ def big_shoe_rebounds
       shoe_size = 1
       if key[:shoe] > shoe_size
         shoe_size = key[:shoe]
-        return key[:player_name]
       end
+      return key[:rebounds]
     end
   end
 end
